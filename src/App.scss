@@ -1,0 +1,150 @@
+.App {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(#9181f4, #5038ed);
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// Custom CSS
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 67px 50px 72px 50px;
+  border-radius: 16px;
+  margin: 0 10px;
+
+  .title {
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0 0 55px 0;
+  }
+
+  .remember-me-checkbox {
+    display: flex;
+    align-items: center;
+    color: #343a40;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 8px;
+
+    & input {
+      height: 16px;
+      width: 16px;
+      margin: 0 10px 0 20px;
+      font-size: 16px;
+      accent-color: #7749f8;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.button {
+  height: 52px;
+  background: linear-gradient(to right, #9181f4, #5038ed);
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 16px;
+  border: none;
+  padding: 0 31px;
+  margin-top: 49px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:disabled {
+    cursor: auto;
+  }
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+
+  .input {
+    width: 100%;
+    max-width: 324px;
+    height: 52px;
+    border-radius: 16px;
+    padding: 0 20px;
+    margin: 10px;
+    border: 2px solid #f0edffcc;
+    background: #f0edffcc;
+
+    &:not(:focus).invalid {
+      border: 2px solid #ed4337;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .error-msg {
+    position: absolute;
+    bottom: -8px;
+    left: 20px;
+    font-size: 13px;
+    color: #ed4337;
+  }
+}
+
+.home-container {
+  height: 100px;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 10px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
