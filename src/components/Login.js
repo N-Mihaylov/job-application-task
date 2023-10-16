@@ -58,8 +58,6 @@ function Login({ setLogged }) {
     }
   };
 
-  console.log(passwordErrorMsg || usernameErrorMsg || username || password);
-  console.log({ passwordErrorMsg, usernameErrorMsg, username, password });
   return (
     <section className='login-container'>
       <h1 className='title'>SIGN IN TO YOUR ACCOUNT</h1>
